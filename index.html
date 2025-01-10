@@ -111,7 +111,17 @@
     if (type === "top10") {
         const titleSpan = document.querySelector('.titleLabel.title');
         if (titleSpan) {
-            titleSpan.textContent = "Top 10 Cloud"; // Change this to the desired text
+            titleSpan.textContent = "Top 10 Stage"; // Change this to the desired text
+        }
+    } else if (type === "top10_inflow") {
+        const titleSpan = document.querySelector('.titleLabel.title');
+        if (titleSpan) {
+            titleSpan.textContent = "Top 10 Inflow"; // Change this to the desired text
+        }
+    } else if (type === "top10_outflow") {
+        const titleSpan = document.querySelector('.titleLabel.title');
+        if (titleSpan) {
+            titleSpan.textContent = "Top 10 Outflow"; // Change this to the desired text
         }
     }
 </script>
