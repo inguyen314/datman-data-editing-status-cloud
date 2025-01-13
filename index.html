@@ -26,6 +26,9 @@
     var type = urlParams.get('type');
     console.log('type: ', type);
 
+    var type_flow = urlParams.get('type_flow');
+    console.log('type_flow: ', type_flow);
+
     var basin = urlParams.get('basin');
     console.log('basin: ', basin);
 
@@ -40,7 +43,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datman Data Editing Status Cloud</title>
+    <title>Datman Data Editing Status</title>
     <meta name="Description" content="U.S. Army Corps of Engineers St. Louis District Home Page" />
     <link rel="stylesheet" href="css/body.css" />
     <link rel="stylesheet" href="css/breadcrumbs.css" />
@@ -73,7 +76,7 @@
                         <!-- Datman -->
                         <div class="box-usace">
                             <h2 class="box-header-striped">
-                                <span class="titleLabel title">Datman Data Editing Status Cloud</span>
+                                <span class="titleLabel title">Datman Data Editing Status</span>
                                 <span class="rss"></span>
                             </h2>
                             <div class="box-content" style="background-color:white;margin:auto">
@@ -113,12 +116,12 @@
         if (titleSpan) {
             titleSpan.textContent = "Top 10 Stage"; // Change this to the desired text
         }
-    } else if (type === "top10_inflow") {
+    } else if (type_flow === "top10_inflow") {
         const titleSpan = document.querySelector('.titleLabel.title');
         if (titleSpan) {
             titleSpan.textContent = "Top 10 Inflow"; // Change this to the desired text
         }
-    } else if (type === "top10_outflow") {
+    } else if (type_flow === "top10_outflow") {
         const titleSpan = document.querySelector('.titleLabel.title');
         if (titleSpan) {
             titleSpan.textContent = "Top 10 Outflow"; // Change this to the desired text
